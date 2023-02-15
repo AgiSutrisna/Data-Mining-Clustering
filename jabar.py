@@ -19,9 +19,6 @@ dataset.drop('tanggal', inplace=True, axis=1)
 dataset.drop('nama_kab_kota', inplace=True, axis=1)
 dataset.drop('id', inplace=True, axis=1)
 
-path = r'C:\Users\agydo\OneDrive\Desktop\mdp\hasil\dataset.csv'
-dataFrame = pd.DataFrame(dataset)
-dataFrame.to_csv(path)
 
 sns.heatmap(dataset.isnull(), yticklabels=False, cbar=False,cmap='viridis')
 dataset.corr()
